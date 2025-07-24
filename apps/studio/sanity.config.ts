@@ -7,7 +7,7 @@ export default defineConfig({
   name: 'default',
   title: 'Day One Content Operations',
 
-  projectId: 'yotophgz',
+  projectId: process.env.SANITY_STUDIO_PROJECT_ID ?? '',
   dataset: 'production',
 
   plugins: [structureTool(), visionTool()],
